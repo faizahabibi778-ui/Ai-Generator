@@ -120,6 +120,7 @@ main div {
   box-shadow: var(--shadow-sm);
   white-space: pre-line;
 }
+
 footer {
   text-align: center;
   font-size: 0.87rem;
@@ -164,4 +165,26 @@ footer a:hover {
   h1 {
     font-size: 1.75rem;
   }
+}
+
+.blink {
+  font-style: italic;
+  color: #6c757d;
+  animation: gentleFade 1.5s infinite ease-in-out;
+}
+
+@keyframes gentleFade {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+main div.hidden {
+  display: none !important;
 }

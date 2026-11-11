@@ -25,7 +25,8 @@ Ensure the imagery is vivid, the language is elegant, and the tone seamlessly bl
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
   let poemElement = document.querySelector("#poem");
-  poemElement.innerHTML = `<span class="blink">Weaving your spiritual verses...</span>`;
+  poemElement.innerHTML = `<span class="blink">⌛Weaving your spiritual verses...</span>`;
+  poemElement.classList.remove("hidden");
 
   axios.get(apiUrl).then(displayPoem);
 }
