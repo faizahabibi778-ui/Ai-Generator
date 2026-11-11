@@ -5,6 +5,7 @@ function displayPoem(response) {
     cursor: "",
     loop: false,
     delay: 40,
+    keepLastString: true,
   });
 }
 
